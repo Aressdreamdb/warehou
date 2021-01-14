@@ -1,0 +1,34 @@
+.middle{
+    height: 90px;    
+    background-color: pink;
+    margin: 20px auto;
+}
+
+.middle>.up{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: skyblue;
+    text-align: center;
+}
+
+.middle>.off,.on,.back{
+    line-height: 50px;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 20px;
+    color: #000000;
+    /* background-color: burlywood; */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.middle>.exit{
+    display: none;
+}
+.middle>.hide{
+    display: none;
+}

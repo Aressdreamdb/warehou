@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站首页</title>
+    <link rel="stylesheet" href="./css/index_HF.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index_search.css">
+    <link rel="stylesheet" href="./css/index_middle.css">
+    <link rel="stylesheet" href="./css/index_nav.css">
+    <link rel="stylesheet" href="./css/index_nav_bar.css">
+    <link rel="stylesheet" href="./css/index_nav_banner.css">
+    <link rel="stylesheet" href="./css/index_shop.css">
+    <link rel="stylesheet" href="./css/index_cart..css">
+</head>
+<body>
+    <script src="./jQuery/jquery.min.js"></script>
+    <script src="./js/public.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/callall.js"></script>
+    <script src="./js/banner.js"></script>
+
+    <header class="center">网站顶部</header>
+    <div class="middle center">
+        <p class="up">用户信息</p>
+        <a href="./login.html" class="off">您好！请登录</a>
+        <p class="on hide">您好！王皓</p>
+        <p class="back">[退出]</p>
+    </div>
+    <!-- search搜索框 -->
+    <div class="search center">
+        <input class="ipt" type="text">
+        <span class="cha">查询</span>
+    </div>
+    <div class="nav center">
+        <div class="bar">二级菜单</div>
+        <div class="box" name="banner1">
+            <ul></ul>
+            <ol></ol>
+            <div>
+                <a name="l" href="JavaScript:;">&lt;</a>
+                <a name="r" href="JavaScript:;">&gt;</a>
+            </div>
+        </div>
+        <script>
+            const imgArr1 = [
+                { path: '01.jpg', width: 490, height: 340, size: 127 },
+                { path: '02.jpg', width: 490, height: 340, size: 128 },
+                { path: '03.jpg', width: 490, height: 340, size: 129 },
+                { path: '04.jpg', width: 490, height: 340, size: 130 },
+            ];
+
+            const oBox1 = document.querySelector('[name="banner1"]');
+
+            const bannerObj1 = new Banner( oBox1 , imgArr1 );
+
+            bannerObj1.init();
+        </script>
+    </div>
+    <div class="shop center">
+        <a class="" href="./shop_list.html">去购物</a>
+        --->
+    </div>
+    <!-- cart购物车 -->
+    <div class="cart center">
+        <a class="" href="./cart.html">去我的购物车</a>
+        --->
+    </div>
+    <footer class="center">网页底部</footer>
+
+    
+</body>
+</html>

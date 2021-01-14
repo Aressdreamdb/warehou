@@ -1,0 +1,27 @@
+.search{
+    height: 120px;
+    background-color: sandybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.search>.ipt{
+    width: 800px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.search>.cha{
+    cursor: pointer;
+    background: blue;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.search>.cha:active{
+    background: skyblue;
+}
